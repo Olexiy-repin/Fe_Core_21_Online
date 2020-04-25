@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #555555;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+.sections {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+
+/* HEADER */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/header/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 38px;
+  padding-bottom: 258px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.logotype {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff;
+  float: left;
+}
+
+.navigation {
+  margin-bottom: 250px;
+}
+
+.navigation__list {
+  float: right;
+  margin-top: 8px;
+}
+
+.navigation__list-item {
+  float: left;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.navigation__list-link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.35px;
+}
+
+.header__title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.header__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.modal-btn {
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 2px;
+  width: 176px;
+  height: 46px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* SERVICES */
+.sections-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.sections-title::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: rgb(85, 85, 85);
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.sections-description {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.services__list-item {
+  width: 346px;
+  float: left;
+  text-align: center;
+}
+
+.services__list-item::before {
+  display: block;
+  content: "";
+  border-width: 2px;
+  border-color: rgb(221, 221, 221);
+  border-style: solid;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 26px;
+}
+
+.services__list-item:not(:last-child) {
+  margin-right: 51px;
+}
+
+.services__list-item-title {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.services__list-item-description {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.services__list-item:first-child::before {
+  background-image: url("../images/services/font.png");
+}
+
+.services__list-item:nth-child(2)::before {
+  background-image: url("../images/services/code.png");
+}
+
+.services__list-item:last-child::before {
+  background-image: url("../images/services/support.png");
+}
+
+/* ABOUT */
+.about {
+  background-color: rgb(248, 248, 248);
+}
+
+.about__content-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 24px;
+  width: 556px;
+}
+
+.about__content-text-wrapper {
+  margin-bottom: 68px;
+}
+
+.about__content-text:first-child {
+  float: left;
+}
+
+.about__content-text:last-child {
+  float: right;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  width: 263px;
+  float: left;
+  text-align: center;
+}
+
+.slider__item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider__item:not(:last-child) {
+  margin-right: 29.3px;
+}
+
+.slider__item-img-wrapper {
+  position: relative;
+}
+
+.slider__item-img {
+  margin-bottom: 16px;
+}
+
+.slider__item-name {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slider__item-position {
+  font-family: "Roboto Slab", serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+}
+
+.social-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+}
+
+.social-list__item {
+  float: left;
+}
+
+.social-list__item-link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__item-link:hover {
+  background-color: rgb(192, 48, 28);
+}
+
+.social-list__item-link_facebook {
+  background-image: url("../images/about/facebook.png");
+}
+
+.social-list__item-link_twitter {
+  background-image: url("../images/about/twitter.png");
+}
+
+.social-list__item-link_google-plus {
+  background-image: url("../images/about/google-plus.png");
+}
+
+.social-list__item-link_linkedin {
+  background-image: url("../images/about/inkedin.png");
+}
+
+.slider__btn-wrapper {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.slider__btn {
+  width: 35px;
+  height: 38px;
+  background-color: rgb(192, 48, 28);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.inactive-btn {
+  background-color: rgba(85, 85, 85, 0.2);
+}
+
+.prev {
+  float: left;
+  background-image: url("../images/about/prev-arrow.png");
+}
+
+.next {
+  float: right;
+  background-image: url("../images/about/next-arrow.png");
+}
