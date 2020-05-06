@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 07</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <form action="#" method="GET" class="contact-form">
+        <div class="contact-form__block">
+            <input name="user_name" type="text" class="contact-form__input" placeholder="Your name...*" required
+                minlength="2">
+            <input name="user_email" type="email" class="contact-form__input" placeholder="Your email...*" required>
+            <input name="user_phone" type="tel" class="contact-form__input" placeholder="096-111-11-11*" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        </div>
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">Age</h2>
+
+            <label>
+                18
+                <input type="radio" name="user_age" class="contact-form__radio" value="18" checked>
+            </label>
+
+
+            <label for="age_22">22</label>
+            <input type="radio" name="user_age" id="age_22" class="contact-form__radio" value="22">
+
+            <label for="age_26">26</label>
+            <input type="radio" name="user_age" id="age_26" class="contact-form__radio" value="26">
+        </div>
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">Hobby</h2>
+
+            <label for="boxing">boxing</label>
+            <input type="checkbox" name="user_hobby" id="boxing" class="contact-form__radio" value="boxing">
+
+            <label for="football">football</label>
+            <input type="checkbox" name="user_hobby" id="football" class="contact-form__radio" value="football" checked>
+
+            <label for="swimming">swimming</label>
+            <input type="checkbox" name="user_hobby" id="swimming" class="contact-form__radio" value="swimming">
+        </div>
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">Message</h2>
+            <textarea name="user_message" class="contact-form__textarea" placeholder="Your message..."></textarea>
+        </div>
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">City</h2>
+            <select name="user_city" class="contact-form__select">
+                <option disabled selected>Select your city...</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Dnepr">Dnepr</option>
+                <option value="Vinnitsa">Vinnitsa</option>
+                <option value="Kharkiv">Kharkiv</option>
+            </select>
+        </div>
+        <div class="contact-form__btn-wrapper">
+            <button type="submit" class="contact-form__btn contact-form__submit">submit</button>
+            <button type="reset" class="contact-form__btn contact-form__reset">reset</button>
+        </div>
+    </form>
+</body>
+
+</html>

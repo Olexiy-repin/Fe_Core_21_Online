@@ -1,0 +1,41 @@
+/* 
+  1px - 1px
+  1mm - 3.8px
+  1cm - 38px
+  1pt - 4/3px
+  1pc - 16px
+*/
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-wrapper {
+  width: 50vw;
+  height: 50vh;
+  background-color: #2980b9;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  background-color: #e74c3c;
+}
+
+.text-wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
