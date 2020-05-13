@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* body {
+  background-color: aqua;
+} */
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+
+/* Когда ширина вьюпорта будет 500px и больше, применить все стили которые находятся внутри */
+/* @media (min-width: 500px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* Когда ширина вьюпорта будет 700px и больше, применить все стили которые находятся внутри */
+/* @media (min-width: 700px) {
+  body {
+    background-color: salmon;
+  }
+} */
+
+/* Когда ширина вьюпорта не привышает 700px, применить то что внутри */
+/* 320 - 700 */
+/* @media (max-width: 700px) {
+  body {
+    background-color: gold;
+  }
+} */
+
+/* Когда ширина вьюпорта не привышает 500px, применить то что внутри */
+/* 320 - 500 */
+/* @media (max-width: 500px) {
+  body {
+    background-color: seagreen;
+  }
+} */
+
+/* @media (width: 500px) {
+  body {
+    background-color: greenyellow;
+  }
+} */
+
+/* ========== AND ========== */
+/* Когда ширина вьпорта будет находиться в отрезке от 500px и до 767px */
+/* @media (min-width: 500px) and (max-width: 767px) {
+  body {
+    background-color: grey;
+  }
+} */
+/* ========== OR ========== */
+/* Когда ширина вьюпорта будте от 320px и до 500px, а так же когда ширина вьюпорта будет от 768px и больше */
+/* @media (max-width: 499px), (min-width: 768px) {
+  body {
+    background-color: hotpink;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+  all - для всех типов
+  screen - для цветных мониторов
+  print - для печати
+  speech - для читалок
+*/
+
+/* @media all and (min-width: 768px) {
+  body {
+    background-color: indianred;
+  }
+} */
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: indianred;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media (orientation: landscape) {
+  body {
+    background-color: indianred;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: khaki;
+  }
+} */
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.cards {
+  padding: 50px 0;
+}
+
+.list__item {
+  padding: 10px;
+  box-shadow: 0 0 5px 0 #ccc;
+}
+
+.list__item:hover {
+  background-color: lawngreen;
+}
+
+.list__item-img {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  /* 1,2,3 */
+  .list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  /* 1,2 */
+  .list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 920px) {
+  .container {
+    width: 900px;
+  }
+}
