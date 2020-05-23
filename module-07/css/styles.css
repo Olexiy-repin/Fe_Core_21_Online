@@ -151,7 +151,7 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 38px;
+  padding-top: 32px;
   padding-bottom: 258px;
 }
 
@@ -165,14 +165,14 @@ address {
   font-weight: 700;
   line-height: 36px;
   color: #fff;
-
+  letter-spacing: -0.6px;
   animation-name: swing;
   animation-duration: 2s;
   animation-timing-function: linear;
 }
 
 .navigation {
-  margin-bottom: 250px;
+  margin-bottom: 246px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,7 +186,7 @@ address {
 }
 
 .navigation__list-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 34px;
 }
 
 .navigation__list-link {
@@ -224,7 +224,7 @@ address {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 
 .header__description {
@@ -240,8 +240,8 @@ address {
   border-color: rgb(255, 255, 255);
   border-style: solid;
   border-radius: 2px;
-  width: 176px;
-  height: 46px;
+  width: 180px;
+  height: 50px;
   background-color: transparent;
   font-size: 16px;
   line-height: 24px;
@@ -250,6 +250,19 @@ address {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+
+.Rectangle_3 {
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 2px;
+  position: absolute;
+  left: 705px;
+  top: 460px;
+  width: 176px;
+  height: 46px;
+  z-index: 427;
 }
 
 /* SERVICES */
