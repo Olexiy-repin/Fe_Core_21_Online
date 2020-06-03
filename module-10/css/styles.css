@@ -1,12 +1,3 @@
-/* 
-  b__e--m
-  b__e_m
-
-  b_m
-  b__e_m
-
-*/
-
 /* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
@@ -63,33 +54,6 @@
   --main-font: "Montserrat", sans-serif;
   --secondary-font: "Roboto Slab", serif;
   --text-color: #555555;
-}
-
-@-webkit-keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
 }
 
 @keyframes swing {
@@ -183,6 +147,11 @@ address {
   padding-bottom: 98px;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 .header {
   background-image: -webkit-gradient(
@@ -224,11 +193,6 @@ address {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
       url("../images/header/bg@2x.jpg");
   }
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
 }
 
 .logotype {
