@@ -1,0 +1,18 @@
+.sections-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.sections-title::after {
+  display: block;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: rgb(85, 85, 85);
+  margin: 0 auto;
+  margin-top: 28px;
+}
